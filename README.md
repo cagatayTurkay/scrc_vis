@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+## Project Diary within the SCRC Visualisation Team
 
-You can use the [editor on GitHub](https://github.com/cagatayTurkay/scrc_vis/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is the project diary repository for the visualisation work carried under the [Scottish COVID-19 Response Consortium](https://github.com/ScottishCovidResponse). 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Contact Tracing Modelling
 
-### Markdown
+The first branch of activity is for the [contact tracing modelling team](https://github.com/ScottishCovidResponse/Contact-Tracing-Model) where we work on different visualisation interventions as collated [here](https://github.com/ScottishCovidResponse/scrc-vis-modelling). 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+My project diary for the work I'm doing within this the [contact tracing modelling team is here]().
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cagatayTurkay/scrc_vis/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
