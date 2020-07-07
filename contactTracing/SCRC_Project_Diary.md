@@ -12,8 +12,8 @@ This is the second iteration of my coding journey with the SCRC project. The las
 and produced these graphics:
 
 | ![](https://paper-attachments.dropbox.com/s_C73B9C180848F3D32D299F28C3C48A732D439727E03428FAF11E31CB867AAFD9_1593030430433_image.png) | ![](https://paper-attachments.dropbox.com/s_C73B9C180848F3D32D299F28C3C48A732D439727E03428FAF11E31CB867AAFD9_1593030635112_image.png) | ![](https://paper-attachments.dropbox.com/s_C73B9C180848F3D32D299F28C3C48A732D439727E03428FAF11E31CB867AAFD9_1593030966897_image.png) |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Graph with recurring random infections during the whole simulation                                                                    | Graph with no further random infections once the simulation started. The graphs are now much richer and longer                        | An example of the longer chains                                                                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Graph with recurring random infections during the whole simulation [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/FullInfectionMap.pdf)] | Graph with no further random infections once the simulation started. The graphs are now much richer and longer [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/NewInfectionMapExport.pdf)] | An example of the longer chains                              |
 
     Note: On Gephi, I follow the layout operations as follows:
     - OpenOrd first which deals with the disconnected components nicely
@@ -23,8 +23,8 @@ and produced these graphics:
 For the large graph, this is the distribution of components — there are 746 components:
 
 | ![Graph with no further random infections once the simulation started. The graphs are now much richer and longer](https://paper-attachments.dropbox.com/s_C73B9C180848F3D32D299F28C3C48A732D439727E03428FAF11E31CB867AAFD9_1593030635112_image.png) | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1593771939578_image.png) |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Graph with no further random infections once the simulation started. The graphs are now much richer and longer                                                                                                                                      |                                                                                                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Graph with no further random infections once the simulation started. The graphs are now much richer and longer [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/NewInfectionMapExport.pdf)] |                                                              |
 
 
 We also got a new Infection Map today with data containing locations. I gave that a try as well, there are 2108 components:
@@ -119,7 +119,7 @@ The question here is whether there is an opportunity to reveal these timelines h
 > An aggregation on how the agents are changing states and their aggregate journeys through the states.
 
 One idea could be to bin these events in terms of the `transition types`. The model description on the github page tells me that:
- 
+
 
 > It comprises of S-E1-E2-Iasymp-Isymp-Isev-D-R disease progression compartments
 
@@ -199,10 +199,10 @@ And let’s have a look at the `locations` of the the infections. A few location
 
 Now all these data is embedded within the graphs, let’s see if there is anything interesting to look at within the graphs.
 
-| Only infections happening in school                                                                                                   | Infections happening School, Restaurants and Small Family Settings                                                                    | Looking at the 30 largest chains and colouring according to infection locations                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Only infections happening in school                          | Infections happening School, Restaurants and Small Family Settings | Looking at the 30 largest chains and colouring according to infection locations |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594070017028_image.png) | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594069968532_image.png) | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594071195445_image.png) |
-|                                                                                                                                       | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594069730905_image.png) |                                                                                                                                       |
+| [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/FullInfection_School.pdf)] | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594069730905_image.png) [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/FullInfection_School-Resturant-SmallFamily.pdf)] | [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/30TopComp_School-Resturant-SmallFamily.pdf)] |
 
 And a closer look at some of the chains
 
@@ -212,8 +212,9 @@ And a closer look at some of the chains
 
 And now let’s look at the disease states of those who are infecting others. Since each individual can be at a different stage when it comes to infecting others, we are colouring the edges
 
-| Infections caused by **Asymptomatic** nodes                                                                                           | Infections caused by nodes at their Symptomatic and Pre-Sympotmatic stages                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Infections caused by **Asymptomatic** nodes                  | Infections caused by nodes at their Symptomatic and Pre-Sympotmatic stages |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594071314701_image.png) | ![](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594071416571_image.png) |
+| [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/30TopComp_Asymptomatic.pdf)] | [[high-res pdf](https://github.com/ScottishCovidResponse/scrc-vis-modelling/blob/master/ContactTracing/GraphVisualisation/StaticInfectionMaps/Outputs/30TopComp_Symptomatic.pdf)] |
 
 
