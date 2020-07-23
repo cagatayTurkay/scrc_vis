@@ -4,11 +4,11 @@
 
 ## Comparative Visualisations 
 
-*Updates and thinking on 2020.07.21* 
+*Updates and thinking on and from 2020.07.21* 
 
 We now received a large collection of scenarios each corresponding to a particular contact tracing policy. We have about 10 runs at this stage described in this document [insert a link].
 
-
+### Some characteristics of the simulation runs
 
 \- All the different runs are seeded with the same set of random infections
 
@@ -18,10 +18,10 @@ We now received a large collection of scenarios each corresponding to a particul
 
 
 
-- The initial 
-
 - Choose the top thirty seed nodes from the *no_policy* simulation. But what does the top thirty means?
   - Shall we look at the most "sociable" in the input data?
   - 
 
-- 
+
+
+
