@@ -62,4 +62,8 @@ And then if we look at the distribution of generation times, we see a distributi
 
 ![mean = 6.523527, std = 2.866262, min = 2.0, max = 24.0](https://paper-attachments.dropbox.com/s_C6E8C0FCB1B16DEE7594A2F1F9B7CE4516FE4FACF347C06F062E142B646BB744_1594031800496_image.png)
 
-## 
+2020.07.10 -- Discussion with Daniel: 
+
+- It would be good to look at the `degree` vs. `generation time` 
+  - Maybe remove the degree-1 nodes
+- Computing the `R_0` value for different locations?
