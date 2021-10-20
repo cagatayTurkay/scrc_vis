@@ -1,3 +1,5 @@
+import define1 from "./02a4320e0e6cbe73@363.js";
+
 export default function define(runtime, observer) {
   const main = runtime.module();
   const fileAttachments = new Map([["image.png",new URL("./files/ae028f5776f275234ea22dac8854801c7c8ecafc7d051558a94cd75ab0fe5a3ef979aa6732e6d95c7917cbfcf5bd3d5f86c34a9db42d818fdbbeab5dd715acda",import.meta.url)],["image@1.png",new URL("./files/4708c152325e948efe67862e1cc7e7663375bc18530abe49028e80c991cacf3d4213f7041bc7dd74e004e026eaf651342a7a72a35849b8c3f7dc0093bd9643a4",import.meta.url)],["image@2.png",new URL("./files/fbbbbf241187ee837fcbb66e67e4f24f1a0368f12da5415062eeacd420312dc43059618f4909ddf14f0a53fcd412bd3f95ca3cdf5cb9b80f7b24dae534a2c852",import.meta.url)],["image@7.png",new URL("./files/824cf21e8de97a1a6fb839a2b646b9c9525799f074a6c97925ada5a705e98b11bdf93f854df27ca728384c7022256cc6e7396ce618f99118a5c2c4fc849c24aa",import.meta.url)],["image@8.png",new URL("./files/fef77b86b9004e9b797c3ebbe0aae2ffc70c6c9304f7aadcfb4c965d8c8517a52aeb921498a91a71cb5078375d17747a03d135de1a0ae6600dc071e36fca36b6",import.meta.url)],["image@9.png",new URL("./files/c144d157bbcf80c8594d123e105495d11256f62cfd443bb2eb79a61cd1b70a7471e536b6684c6244c4ca79cd9611fd2a2ee27c9a9c3a57efef85dfcbd4da360e",import.meta.url)],["image@10.png",new URL("./files/3090b6fd20f4ce6df87cfae6105bd1ef546b67c038258f3719e1d27d0f04cddb65b1f0bfeb81f960fd873706cf75ca1a919218c6f6093be5d28e0b1b0410f42d",import.meta.url)],["image@11.png",new URL("./files/af5ff6789ac3b99855c8b772da6992bbec8968f53486455d26631da8df30f4342b7d1840e38af71acb4cbec067f04b73596b20fc8f2febcd8c5472e9f1b63d83",import.meta.url)],["image@14.png",new URL("./files/743a394ecd731c3c27a884ee25d10a90b4b942c3d96a5a3de934f7d244b702fac320ebac6e9102efc36b7af4db62263fc0132bd52738b5fc3218aae2813c879a",import.meta.url)]]);
@@ -239,5 +241,51 @@ md`[1] Turkay, C., Filzmoser, P. and Hauser, H., 2011. Brushing dimensions-a dua
 
 [4] Berndt, D.J. and Clifford, J., 1994, July. Using dynamic time warping to find patterns in time series. In KDD workshop (Vol. 10, No. 16, pp. 359-370)`
 )});
+  main.variable(observer()).define(["md"], function(md){return(
+md`### Imports`
+)});
+  const child1 = runtime.module(define1);
+  main.import("ui", child1);
+  main.variable(observer()).define(["ui","htl"], function(ui,htl)
+{
+  // If this page is outside of Observable, set the default styles to approximate
+  // the appearance of the Observable Look and Feel.
+  if (ui === "custom") {
+    return htl.html`<style>@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+
+  body {
+     font-family: 'Source Serif Pro', serif;
+     font-weight: 400;
+     line-height: 1.6;
+     color: #333;
+     padding-left: 2em;
+     padding-right: 2em;
+  }
+
+  p,div,ul,ol,li {
+    max-width: 640px;
+  }
+
+  form,table,tr,td,th {
+    font-family: sans-serif !important;
+    font-size: 9pt !important;
+    color: #333;
+  }
+
+  table {
+    margin-top:0.5em !important;
+    margin-bottom:0.5em !important;
+  }
+
+  .observablehq .observablehq--inspect {
+    display: none;
+  }
+  </style>
+  <pre style="font-size:8pt">Archive view</pre>`;
+  } else {
+    return htl.html`<pre style="font-size:8pt">Live view</pre>`;
+  }
+}
+);
   return main;
 }
