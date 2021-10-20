@@ -7,6 +7,47 @@ export default function define(runtime, observer) {
   main.variable(observer()).define(["md"], function(md){return(
 md`# RAMPVIS Idiom : Derived Data Spaces`
 )});
+  main.variable(observer()).define(["ui","htl"], function(ui,htl)
+{
+  // If this page is outside of Observable, set the default styles to approximate
+  // the appearance of the Observable Look and Feel.
+  if (ui === "custom") {
+    return htl.html`<style>@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+
+  body {
+     font-family: 'Source Serif Pro', serif;
+     font-weight: 400;
+     line-height: 1.6;
+     color: #333;
+     padding-left: 2em;
+     padding-right: 2em;
+  }
+
+  p,div,ul,ol,li {
+    max-width: 640px;
+  }
+
+  form,table,tr,td,th {
+    font-family: sans-serif !important;
+    font-size: 9pt !important;
+    color: #333;
+  }
+
+  table {
+    margin-top:0.5em !important;
+    margin-bottom:0.5em !important;
+  }
+
+  .observablehq .observablehq--inspect {
+    display: none;
+  }
+  </style>
+  <pre style="font-size:8pt">This is an archived view of the live Observable: <a href="https://observablehq.com/d/78b20aa4152547e2">https://observablehq.com/d/78b20aa4152547e2</a></pre>`;
+  } else {
+    return htl.html`<pre style="font-size:8pt">RAMPVIS PhilTransA Submission Live Notebook Supplement</pre>`;
+  }
+}
+);
   main.variable(observer()).define(["md"], function(md){return(
 md`---
 # Introduction`
@@ -246,46 +287,5 @@ md`### Imports`
 )});
   const child1 = runtime.module(define1);
   main.import("ui", child1);
-  main.variable(observer()).define(["ui","htl"], function(ui,htl)
-{
-  // If this page is outside of Observable, set the default styles to approximate
-  // the appearance of the Observable Look and Feel.
-  if (ui === "custom") {
-    return htl.html`<style>@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
-
-  body {
-     font-family: 'Source Serif Pro', serif;
-     font-weight: 400;
-     line-height: 1.6;
-     color: #333;
-     padding-left: 2em;
-     padding-right: 2em;
-  }
-
-  p,div,ul,ol,li {
-    max-width: 640px;
-  }
-
-  form,table,tr,td,th {
-    font-family: sans-serif !important;
-    font-size: 9pt !important;
-    color: #333;
-  }
-
-  table {
-    margin-top:0.5em !important;
-    margin-bottom:0.5em !important;
-  }
-
-  .observablehq .observablehq--inspect {
-    display: none;
-  }
-  </style>
-  <pre style="font-size:8pt">Archive view</pre>`;
-  } else {
-    return htl.html`<pre style="font-size:8pt">Live view</pre>`;
-  }
-}
-);
   return main;
 }
