@@ -42,7 +42,7 @@ md`# RAMPVIS Idiom : Derived Data Spaces`
     display: none;
   }
   </style>
-  <pre style="font-size:8pt font-style: italic;"><b>Note:</b> This is an archived version of an Observable Notebook supplement for the RAMPVIS PhilTransA submission titled: </br>"Visualization for Epidemiological Modelling: Challenges, Solutions, Reflections & Recommendations"</br>For the live version, see here: <a href="https://observablehq.com/d/78b20aa4152547e2">https://observablehq.com/d/78b20aa4152547e2</a></pre>`;
+  <pre style="font-size:8pt; font-style: italic;"><b>Note:</b> This is an archived version of an Observable Notebook supplement for the RAMPVIS PhilTransA submission titled: </br>"Visualization for Epidemiological Modelling: Challenges, Solutions, Reflections & Recommendations"</br>For the live version, see here: <a href="https://observablehq.com/d/78b20aa4152547e2">https://observablehq.com/d/78b20aa4152547e2</a></pre>`;
   } else {
     return htl.html`<pre style="font-size:8pt; font-style: italic;"><b>Note:</b> This is a live version of this Observable Notebook supplement for the RAMPVIS PhilTransA submission titled </br>"Visualization for Epidemiological Modelling: Challenges, Solutions, Reflections & Recommendations"</pre>`;
   }
